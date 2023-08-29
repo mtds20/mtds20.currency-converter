@@ -18,7 +18,7 @@ Installation
 
 Clone the repository:
 
-git clone https://github.com/your-username/currency-converter.git
+git clone https://github.com/mtds20/currency-converter.git
 
 Navigate into the project directory:
 
