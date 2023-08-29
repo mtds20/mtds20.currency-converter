@@ -1,50 +1,52 @@
-Currency Converter Web App
-Overview
+CURRENCY CONVERTER WEB APP
+
+. Overview
 This is a web-based currency converter that uses the ExchangeRate-API to fetch real-time currency exchange rates. Users can input an amount and select currencies to convert from and to, and the application will display the converted amount.
 
-Features
-Real-time currency conversion
-Support for multiple currencies
-User-friendly and responsive design
-Front-end validation to prevent negative amounts
+. Features
+- Real-time currency conversion
+- Support for multiple currencies
+- User-friendly and responsive design
+- Front-end validation to prevent negative amounts
 
-Getting Started
-Prerequisites
-Python 3.x
-Flask
-requests library
 
-Installation
+. Getting Started
+1. Prerequisites
+- Python 3.x
+- Flask
+- requests library
 
-Clone the repository:
+. Installation
 
-git clone https://github.com/mtds20/currency-converter.git
+1. Clone the repository:
 
-Navigate into the project directory:
+- git clone https://github.com/mtds20/currency-converter.git
 
-cd currency-converter
+2. Navigate into the project directory:
 
-Install the required packages:
+- cd currency-converter
 
-pip install -r requirements.txt
+3. Install the required packages:
 
-Run the application:
+- pip install -r requirements.txt
 
-python app.py
+4. Run the application:
 
-Open your web browser and go to http://127.0.0.1:5000/ to use the application.
+- python app.py
 
-Usage
-Select the "From" currency.
-Select the "To" currency.
-Input the amount you want to convert.
-Click "Convert".
+5. Open your web browser and go to http://127.0.0.1:5000/ to use the application.
 
-Contributing
-If you'd like to contribute, please fork the repository and make changes as you'd like. Pull requests are warmly welcome.
+. Usage
+1. Select the "From" currency.
+2. Select the "To" currency.
+3. Input the amount you want to convert.
+4. Click "Convert".
 
-License
-This project is open-source and available under the MIT License.
+. Contributing
+- If you'd like to contribute, please fork the repository and make changes as you'd like. Pull requests are warmly welcome.
 
-Credits
-Currency rates provided by ExchangeRate-API.
+. License
+- This project is open-source and available under the MIT License.
+
+. Credits
+- Currency rates provided by ExchangeRate-API.
