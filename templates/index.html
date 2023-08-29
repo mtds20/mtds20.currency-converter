@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Currency Converter</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <script>
+      function validateForm() {
+        const amount = parseFloat(document.getElementById("amount").value);
+        if (amount < 0) {
+          alert("Amount cannot be negative.");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="bg-effect"></div>
+    <header>
+      <h1>Currency Converter</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <form method="post" onsubmit="return validateForm()">
+          <div class="form-group">
+            <label for="from_currency">Convert from:</label>
+            <select
+              class="form-control"
+              name="from_currency"
+              id="from_currency"
+            >
+              {% for currency in available_currencies %}
+              <option value="{{ currency }}">{{ currency }}</option>
+              {% endfor %}
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="to_currency">Convert to:</label>
+            <select class="form-control" name="to_currency" id="to_currency">
+              {% for currency in available_currencies %}
+              <option value="{{ currency }}">{{ currency }}</option>
+              {% endfor %}
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="amount">Amount:</label>
+            <input
+              type="number"
+              class="form-control"
+              name="amount"
+              id="amount"
+              placeholder="e.g., 100"
+              step="0.01"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn-primary">Convert</button>
+        </form>
+
+        {% if converted_amount %}
+        <h2>Result</h2>
+        <p>{{ converted_amount }}</p>
+        <a href="{{ url_for('index') }}" class="reset-button">Convert Again</a>
+        {% endif %}
+      </div>
+    </main>
+
+    <footer>
+      <div class="simple-footer">
+        <p>
+          Powered by
+          <a
+            href="https://www.exchangerate-api.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >ExchangeRate-API</a
+          >
+        </p>
+        <p>&copy; 2023 CurrencyConverterWA. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+/* Global Styles */
+body {
+  background-color: #f3f4f6;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.bg-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.1)
+  );
+  z-index: -1;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header,
+main,
+footer {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  color: #4a5568;
+  font-size: 2.5em;
+}
+
+/* Form Styles */
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Button styles */
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 12px 24px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px; /* Adds rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  cursor: pointer; /* Makes it clear that the button is clickable */
+  transition: background-color 0.2s ease, box-shadow 0.2s ease; /* Smooth transition */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade when hovered */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow when hovered */
+}
+
+.btn-primary:active {
+  background-color: #004999; /* Even darker shade when clicked */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly smaller shadow when clicked */
+}
+
+/* Output display */
+h2 {
+  border-top: 2px solid #007bff;
+  padding-top: 20px;
+  color: #333;
+}
+
+.reset-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: #555;
+}
+
+/* Media Query */
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+/* Simple Footer Styles */
+.simple-footer {
+  background-color: #2d3748;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.simple-footer p {
+  margin: 5px 0;
+}
+
+.simple-footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.simple-footer a:hover {
+  color: #cbd5e0;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .simple-footer {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+}
