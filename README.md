@@ -1,7 +1,7 @@
 CURRENCY CONVERTER WEB APP
 
 . Overview
-This is a web-based currency converter that uses the ExchangeRate-API to fetch real-time currency exchange rates. Users can input an amount and select currencies to convert from and to, and the application will display the converted amount.
+- This is a web-based currency converter that uses the ExchangeRate-API to fetch real-time currency exchange rates. Users can input an amount and select currencies to convert from and to, and the application will display the converted amount.
 
 . Features
 - Real-time currency conversion
